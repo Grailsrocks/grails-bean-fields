@@ -787,7 +787,9 @@ class BeanTagLib {
 			// workaround grails 1.0.2 and earlier bug where null checked ticks the box
 			attrs['checked'] = renderParams.fieldValue == null ? false : Boolean.valueOf(renderParams.fieldValue.toString())
 			// Workaround for checkBox's ugly use of 'value' not for state but for submitted value to controller
-			attrs.value = renderParams.fieldValue
+			if (renderParams.fieldValue != null) {
+			    attrs.value = renderParams.fieldValue
+		    }
 
 		    def cb = g.checkBox( attrs)
 
