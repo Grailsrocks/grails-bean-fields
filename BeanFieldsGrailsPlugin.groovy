@@ -1,6 +1,6 @@
 class BeanFieldsGrailsPlugin {
     // the plugin version
-    def version = "1.0-SNAPSHOT"
+    def version = "1.0"
     // the version or versions of Grails the plugin is designed for
     def grailsVersion = "1.3 > *"
     // the other plugins this plugin depends on
@@ -15,7 +15,7 @@ class BeanFieldsGrailsPlugin {
     def authorEmail = "marc@grailsrocks.com"
     def title = "Bean Fields - smart tags for command and domain objects"
     def description = '''\
-Quick and easy smart rendering of fields of domain and command objects.
+Smart rendering of fields of domain and command objects. For Grails 2 we recommend changing to Grails Fields plugin.
 '''
 
     // URL to the plugin's documentation
